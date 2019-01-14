@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Finding DASL Property Names"
 date: 2008-12-19
 ---

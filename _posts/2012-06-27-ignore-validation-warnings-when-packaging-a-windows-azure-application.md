@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Ignore Validation Warnings when Packaging a Windows Azure Application"
 date: 2012-06-27
 ---

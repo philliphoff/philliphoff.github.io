@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Debugging LINQ-to-DASL Queries"
 date: 2008-12-18
 ---

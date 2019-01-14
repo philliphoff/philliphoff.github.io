@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Extending LINQ to DASL with Custom DASL Properties"
 date: 2008-02-20
 ---

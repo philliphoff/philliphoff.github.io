@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Add Files to your Windows Azure Package using Role Content Folders"
 date: 2012-06-08
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "VSTO at Portland Code Camp v3.0"
 date: 2007-05-22
 ---

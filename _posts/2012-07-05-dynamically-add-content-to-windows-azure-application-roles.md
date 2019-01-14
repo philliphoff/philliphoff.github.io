@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Dynamically Add Content to Windows Azure Application Roles"
 date: 2012-07-05
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Using LINQ with the Office Object Model"
 date: 2008-02-19
 ---

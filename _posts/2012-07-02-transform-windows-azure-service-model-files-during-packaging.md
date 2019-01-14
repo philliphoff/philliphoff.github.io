@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Transform Windows Azure Service Model Files During Packaging"
 date: 2012-07-02
 ---

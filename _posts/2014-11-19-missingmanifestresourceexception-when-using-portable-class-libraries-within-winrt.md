@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "MissingManifestResourceException when using Portable Class Libraries within WinRT"
 date: 2014-11-19
 ---

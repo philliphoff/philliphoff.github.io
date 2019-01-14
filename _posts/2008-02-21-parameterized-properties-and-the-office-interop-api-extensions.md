@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Parameterized Properties and the Office Interop API Extensions"
 date: 2008-02-21
 ---

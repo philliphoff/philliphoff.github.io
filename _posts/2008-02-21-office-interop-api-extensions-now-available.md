@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Office Interop API Extensions Now Available!"
 date: 2008-02-21
 ---

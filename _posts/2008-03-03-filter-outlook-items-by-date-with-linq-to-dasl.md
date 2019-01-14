@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Filter Outlook Items by Date with LINQ to DASL"
 date: 2008-03-03
 ---

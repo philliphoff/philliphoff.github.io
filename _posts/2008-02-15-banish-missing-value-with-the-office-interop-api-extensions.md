@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Banish Missing.Value with the Office Interop API Extensions"
 date: 2008-02-15
 ---

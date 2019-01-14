@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "LINQ to DASL Walkthrough"
 date: 2008-02-25
 ---

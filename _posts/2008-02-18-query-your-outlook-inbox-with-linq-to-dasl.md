@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Query your Outlook Inbox with LINQ to DASL"
 date: 2008-02-18
 ---
