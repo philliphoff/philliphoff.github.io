@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>{{ page.title }}</title>
+            <!-- link to main stylesheet -->
+            <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+        </head>
+        <body>
+            <header class="page-header">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="main-content">
+                {{ content }}
+            </div>
+            <footer class="site-footer">
+                <ul>
+                    <li><a href="mailto:phillip@orst.edu">email</a></li>
+                    <li><a href="https://github.com/philliphoff">github.com/philliphoff</a></li>
+                </ul>
+            </footer>
+        </body>
+    </html>
