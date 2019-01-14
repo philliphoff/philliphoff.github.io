@@ -3,7 +3,7 @@ layout: post
 title: "LINQ to DASL Walkthrough"
 date: 2008-02-25
 ---
-<P>Now that the Office Interop API Extensions have been <A href="http://blogs.msdn.com/philliphoff/archive/2008/02/21/office-interop-api-extensions-now-available.aspx" mce_href="http://blogs.msdn.com/philliphoff/archive/2008/02/21/office-interop-api-extensions-now-available.aspx">released</A>, I thought I would post a complete walkthrough of a simple LINQ to DASL application. Let's start with my fictitious Outlook calendar: </P>
+<P>Now that the Office Interop API Extensions have been <A href="{% post_url 2008-02-21-office-interop-api-extensions-now-available %}">released</A>, I thought I would post a complete walkthrough of a simple LINQ to DASL application. Let's start with my fictitious Outlook calendar: </P>
 <P mce_keep="true"><IMG style="WIDTH: 725px; HEIGHT: 756px" height=756 src="/assets/posts/AppointmentsView.JPG" width=725></P>
 <P>This calendar shows that I have four appointments today. The appointments have been categorized as either "Work" (blue) or "Personal" (green). Suppose I would like to create an Outlook add-in that displays my personal appointments on startup. I will first create a new C#-based Outlook 2007 Add-in project in Visual Studio 2008. </P>
 <P mce_keep="true"><IMG style="WIDTH: 697px; HEIGHT: 478px" height=478 src="/assets/posts/NewProject.JPG" width=697></P>
