@@ -2,6 +2,7 @@
 layout: posts
 title: "LINQ to DASL Walkthrough"
 date: 2008-02-25
+tags: [msdn]
 ---
 <P>Now that the Office Interop API Extensions have been <A href="{% post_url 2008-02-21-office-interop-api-extensions-now-available %}">released</A>, I thought I would post a complete walkthrough of a simple LINQ to DASL application. Let's start with my fictitious Outlook calendar: </P>
 <P mce_keep="true"><IMG style="WIDTH: 725px; HEIGHT: 756px" height=756 src="/assets/posts/AppointmentsView.JPG" width=725></P>
@@ -50,3 +51,5 @@ date: 2008-02-25
 <P>Finally, I can hit 'F5' and see the results. </P>
 <P mce_keep="true"><IMG src="/assets/posts/Output.JPG"></P>
 <P>Hopefully this helps people get started with LINQ to DASL. (If it doesn't, please let me know what else I can cover to make things more clear.) This sample can be found on Code Gallery <A href="https://code.msdn.microsoft.com/Release/ProjectReleases.aspx?ProjectName=OfficeExtensions&amp;ReleaseId=527" mce_href="https://code.msdn.microsoft.com/Release/ProjectReleases.aspx?ProjectName=OfficeExtensions&amp;ReleaseId=527">here</A>.</P>
+
+{% include_relative msdn-notice.md %}

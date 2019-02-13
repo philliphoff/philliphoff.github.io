@@ -2,6 +2,7 @@
 layout: posts
 title: "Add Files to your Windows Azure Package using Role Content Folders"
 date: 2012-06-08
+tags: [msdn]
 ---
 Windows Azure applications often need to package and deploy additional content. This could be advanced configuration files such as the diagnostics.wadcfg for the Diagnostics plugin. It could also be scripts and binaries that modify the virtual machine to which a role is deployed, such as installing additional runtime components. In any case, prior to the June 2012 (1.7) release of the Windows Azure Tools for Visual Studio, there were few direct ways to get this content into a package and deployed to Windows Azure.
 
@@ -30,3 +31,5 @@ The following two screenshots are of the application folder for one of the web r
 You might be wondering how this all works. This new feature is actually based on an existing capability of the Windows Azure SDK. Since version 1.5 the Windows Azure SDK has supported the [Contents element](http://msdn.microsoft.com/en-us/library/windowsazure/gg557553#Contents) in the service definition that indicates additional folders to include in the package and deploy to the virtual machine. The Tools simply did not have any tooling around this capability…until now. During packaging, the Tools will identify project content within Role Content Folders and inject the appropriate elements into the service definition so that CSPack will insert that content into the package.
 
 > Note: be careful of how you name content in a Role Content Folder. Because this content is deployed to the role’s `APPROOT` directory—the same directory in which the role is deployed—there is the possibility of file name collisions. Be sure to use filenames in your Azure project that are unlikely to conflict with files belonging to the role project itself.
+
+{% include_relative msdn-notice.md %}

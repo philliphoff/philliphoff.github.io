@@ -2,6 +2,7 @@
 layout: posts
 title: "Banish Missing.Value with the Office Interop API Extensions"
 date: 2008-02-15
+tags: [msdn]
 ---
 I like VSTO. I like C#. What I don't like is having to write VSTO code in C# like:
 
@@ -63,3 +64,5 @@ The method would take an instance of an arguments class where I could set--using
 Am I just dreaming? Must I be content with typing `ref` over and over again for as long as I develop Office applications? Must I leave my beloved C# for the seductive VB? The answer is a resounding NO! The VSTO Power Tools announced at this week's Office Developer Conference are expected to be released in the very near future. One of those tools is the Office Interop API Extensions, a set of libraries that extend the Office object model and provide a more elegant and consistent API for the C# developer. The three examples above are all possible using the Word extensions shipped as part of this tool. Furthermore, many other interfaces* from across the Office object model have been extended in a similar manner in order to make the lives of C# developers easier. Keep an eye out for this tool and use it to banish `Missing.Value` (and its close cousin `Type.Missing`) from your C# Office applications.
 
 *In this initial release, most of the extension work was focused on Word and Excel. The Outlook extensions had an entirely different focus which I'll discuss in a later post.
+
+{% include_relative msdn-notice.md %}

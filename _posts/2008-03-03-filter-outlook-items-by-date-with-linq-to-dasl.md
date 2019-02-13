@@ -2,6 +2,7 @@
 layout: posts
 title: "Filter Outlook Items by Date with LINQ to DASL"
 date: 2008-03-03
+tags: [msdn]
 ---
 <P>I received an email over the weekend asking why the following LINQ to DASL query threw an exception: </P>
 <BLOCKQUOTE>
@@ -41,3 +42,5 @@ date: 2008-03-03
 <P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Courier New"><SPAN style="COLOR: #2b91af">MessageBox</SPAN>.Show(appointment.Start.ToString()); </SPAN></P></BLOCKQUOTE>
 <P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Courier New">} </SPAN></P></BLOCKQUOTE>
 <P>Note that the AsQueryable&lt;T&gt;() extension method now uses the new MyAppointment type and that its Start property is used instead of Item.Start.Date. Run the query again and Outlook should return a collection of appointments instead of an exception (presuming you have any appointments which match the query).</P>
+
+{% include_relative msdn-notice.md %}

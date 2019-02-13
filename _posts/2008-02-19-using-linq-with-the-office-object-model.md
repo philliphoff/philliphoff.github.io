@@ -2,6 +2,7 @@
 layout: posts
 title: "Using LINQ with the Office Object Model"
 date: 2008-02-19
+tags: [msdn]
 ---
 In my last [post]({% post_url 2008-02-18-query-your-outlook-inbox-with-linq-to-dasl %}) I talked about LINQ to DASL, a LINQ provider that converts query expressions into their DASL equivalent in order to efficiently filter item collections in Outlook. But LINQ to DASL solves only a very specific problem for one particular application. The Office object model has many types of collections that we might like to use in LINQ expressions. How do we do that? The answer is: it depends.
 
@@ -106,3 +107,5 @@ adjustments.Items() // Returns IEnumerable<float>.
 The VSTO Power Tools are expected for release in the very near future. Keep an eye out for them and use the Office Interop API Extensions to enable LINQ in your Office applications!
 
 *Not all of the collections are extended in this initial release. The bulk of the extensions are in the Word and Excel object models, with a key set of collections extended across the rest of the Office suite.
+
+{% include_relative msdn-notice.md %}

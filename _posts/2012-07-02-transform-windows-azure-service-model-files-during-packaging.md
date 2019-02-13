@@ -2,6 +2,7 @@
 layout: posts
 title: "Transform Windows Azure Service Model Files During Packaging"
 date: 2012-07-02
+tags: [msdn]
 ---
 <p>The latest versions of the Windows Azure Tools for Visual Studio have the ability to maintain multiple versions of the Service Configuration (.cscfg) file.&nbsp; The developer is then prompted to select the version to accompany a deployment, whether it&rsquo;s going to Windows Azure or the development fabric (i.e. the emulator).&nbsp; However, sometimes a developer needs to do something a little more dynamic, where elements of the Service Configuration file must be generated on-the-fly before deployment.</p>
 <p>The Tools generate a Windows Azure package via a process driven by MSBuild.&nbsp; The process already performs certain transformations of the Service Configuration file from the original hosted by the project.&nbsp; These transformations include:</p>
@@ -60,3 +61,5 @@ date: 2012-07-02
 <p><span style="font-family: Courier New;" face="Courier New"></span></p>
 <p><span style="font-family: Courier New;" face="Courier New">&nbsp; &lt;Message importance="high" Text="Transformed @(TargetServiceConfiguration) using ServiceConfiguration.$(TargetProfile).Transform.cscfg." /&gt; <br />&nbsp; <br />&lt; /Target&gt; <br /> . <br /> . <br /> .</span></p>
 <p>To sum up, if you are willing to spend some time to learn a few basic MSBuild concepts, the Windows Azure Tools for Visual Studio offers a lot of packaging flexibility.&nbsp; If you have custom packaging scenarios that the Tools do not support directly, consider using the Tools extensibility to add your own!</p>
+
+{% include_relative msdn-notice.md %}

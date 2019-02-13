@@ -1,0 +1,1 @@
+> This post was migrated from my [MSDN](https://msdn.microsoft.com/en-us/) blog, [Visual Studio Tools and Anything Else I Can Think Of](https://blogs.msdn.microsoft.com/philliphoff/), and written as a Microsoft employee.

@@ -2,6 +2,7 @@
 layout: posts
 title: "Ignore Validation Warnings when Packaging a Windows Azure Application"
 date: 2012-06-27
+tags: [msdn]
 ---
 When a package fails to deploy to Windows Azure (or deploys but its roles fail to start properly) it can be difficult to determine what went wrong. In many cases, these failures often happen before the diagnostics agent has had a chance to startup and help identify the issue. A lot of these failures are due to simple but easily forgotten tasks, such as not adding a referenced assembly to the package or not updating your connection strings to point to Windows Azure storage instead of the storage emulator. The Windows Azure Tools for Visual Studio tries to help developers catch many of these issues before they spend time waiting for their package to deploy and the application to start (and then fail). When such issues are encountered during packaging the build process generates validation warnings or errors. The developer then has immediate, specific feedback on what needs to be done before deploying again to Windows Azure.
 
@@ -36,3 +37,5 @@ To ignore validation warnings when packaging a Windows Azure application, set th
 ```
 
 Now these warnings will not be generated when packaging.
+
+{% include_relative msdn-notice.md %}

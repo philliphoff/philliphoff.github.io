@@ -2,6 +2,7 @@
 layout: posts
 title: "Finding DASL Property Names"
 date: 2008-12-19
+tags: [msdn]
 ---
 The LINQ-to-DASL provider of the Office Interop API Extensions provides a very limited set of mappings between its query types and their associated DASL properties. We didn't have the time to add them all and we didn't know which properties (besides the obvious ones like `Subject` and `DateReceived`) users would be most likely to use in their queries. Instead, we created an extensibility mechanism (the `OutlookItemPropertyAttribute`) that allowed users to add their own mappings to DASL properties. Now the problem becomes, where do we find these DASL property names?
 
@@ -38,3 +39,6 @@ Finally, select the SQL tab to see the DASL.
 In this case, we see that the DASL property associated with the Modified time of an appointment is `"DAV:getlastmodified"`. To cut and paste the query string elsewhere (e.g. to Notepad, so you can compare the query string to the [debug output of your LINQ-to-DASL query]({% post_url 2008-12-18-debugging-linq-to-dasl-queries %})), check the box at the bottom of the tab.
 
 [![](/assets/posts/SelectedDasl_thumb.jpg)](/assets/posts/SelectedDasl.jpg)
+
+
+{% include_relative msdn-notice.md %}

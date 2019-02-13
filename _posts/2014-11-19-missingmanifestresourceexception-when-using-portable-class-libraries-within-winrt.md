@@ -2,6 +2,7 @@
 layout: posts
 title: "MissingManifestResourceException when using Portable Class Libraries within WinRT"
 date: 2014-11-19
+tags: [msdn]
 ---
 Our team recently ran into a strange issue. Our Windows Phone application targets Silverlight 8.1 but we have several WinRT 8.1 based background tasks. Recently, we refactored our codebase into several Portable Class Libraries (PCLs) in order to better share code between the application and background tasks. Since then, however, we've started seeing `MissingManifestResourceExceptions` thrown from the background tasks from the `ResourceManager.GetString(String, CultureInfo)` method. The odd thing was that this occurred *only* in the background tasks, *only* when running on a real phone, and *only* in the application's `Release` configuration. The exceptions were not seen in the Silverlight application, or in the Windows Phone emulator, or when using the application's Debug configuration.
 
@@ -59,3 +60,5 @@ Caveats:
  - Using reflection to set private fields for types you do not own completely (e.g. are generated) is highly fragile and could break with the next version of the `Resources` class generator. Do this only if you have no other choice and ensure you have checks in place to detect such breaks.
 
  - In our case we owned all of the PCLs referenced by our WinRT component. I cannot say whether this workaround will work for all (e.g. third-party) PCLs, and may not work for PCLs which have internal resource types that cannot be as easily injected.
+
+{% include_relative msdn-notice.md %}

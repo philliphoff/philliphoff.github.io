@@ -2,6 +2,7 @@
 layout: posts
 title: "Debugging LINQ-to-DASL Queries"
 date: 2008-12-18
+tags: [msdn]
 ---
 <p>When your LINQ-to-DASL queries do not return the results you expect, how do you determine where the problem is?&#160; The issue could be that the query simply doesn't do what you expect.&#160; For example, you could be querying the wrong DASL properties and therefore Outlook returns no (or unexpected) items.&#160; (This is easy to do, as DASL property names can be difficult to identify and map to the equivalent Outlook object model property.)&#160; It could also be that the DASL query syntax itself is incorrect or the LINQ-to-DASL provider did not manage the query results property.</p>  <p>Fortunately, the LINQ-to-DASL provider offers a way to gain a little insight into what it is actually doing.&#160; You can attach a logger to the provider that will be passed the exact DASL string passed to Outlook when the query is executed.</p>  <p>Let's say we want to find all appointments that have been modified in the last week.&#160; That is, where the LastModifiedTime is within the last seven days.&#160; First, we'll define a custom class on which to perform the query.&#160; (We do this because the built-in Appointment query class does not have LastModifiedTime.)</p>  <pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">MyAppointment </span>: <span style="color: #2b91af">Appointment
 </span>{
@@ -101,3 +102,5 @@ date: 2008-12-18
 <p><a href="/assets/posts/DebugOutput.jpg"><img alt="DebugOutput" src="/assets/posts/DebugOutput_thumb.jpg" width="633" height="267" /></a></p>
 
 <p>You can see the exact DASL filter string sent to Outlook when the query was executed.&#160; You can use this to verify that the DASL property names, syntax, and values all look correct.&#160; You can also compare this filter string to the string built using the advanced filtration dialog in Outlook.</p>
+
+{% include_relative msdn-notice.md %}

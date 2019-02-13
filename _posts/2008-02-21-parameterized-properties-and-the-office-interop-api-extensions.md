@@ -2,6 +2,7 @@
 layout: posts
 title: "Parameterized Properties and the Office Interop API Extensions"
 date: 2008-02-21
+tags: [msdn]
 ---
 <p>One of the disadvantages of C# compared with VB is its lack of support for parameterized properties.  Instead, parameterized properties in C# are exposed as normal method calls prefixed with "get_" and "set_".  This is particularly apparent when working with the Office object model as it exposes many such properties, the majority being indexers on collection interfaces.  To make matters worse, some collection interfaces have array indexers rather than indexer properties, which make indexing inconsistent between collection types.  Since many of the parameters are optional or accept varying types, we lose many of the strong typing benefits of the C# language.  The end result is inconsistent, inelegant, and error prone code.
 </p><p>Let's take the Documents collection in Word for example.  That interface defines the Item property with a single variant (i.e. object) argument.  According to the MSDN documentation, that argument value should be an integer or a string.  Retrieving a document by integer index looks something like:
@@ -48,3 +49,5 @@ date: 2008-02-21
 </span></p><p>
  </p><p>Not only have we eliminated the ugly "get_" and the need to specify System.Type.Missing, our arguments are conveniently strongly-typed.  These may seem like little things, but over the long term I think the improved readability and additional compile-time support will make for a better Office development experience for the C# developer.
 </p>
+
+{% include_relative msdn-notice.md %}

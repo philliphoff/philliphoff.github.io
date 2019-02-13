@@ -2,6 +2,7 @@
 layout: posts
 title: "Query your Outlook Inbox with LINQ to DASL"
 date: 2008-02-18
+tags: [msdn]
 ---
 Quick, tell me what the following code does:
 
@@ -59,3 +60,5 @@ You might be wondering about the Mail type in the example. One of the problems w
 The LINQ to DASL implementation instead contains a hierarchy of types that parallel the Outlook item interfaces but which form a proper hierarchy, allowing the creation of generic queries. These types also expose strongly-typed properties which are attributed with their equivalent DASL properties, used to generate the proper query strings. Finally, the LINQ to DASL implementation of `IQueryProvider` and `IQueryable<T>` is conveniently exposed to the developer via the `AsQueryable<T>()` extension method on the Items interface.
 
 The initial release of the Office Interop API Extensions does not contain mappings for all known DASL properties. In the event that your favorite property is missing, however, there is a mechanism to extend the built-in types to allow strongly-typed queries of any DASL property. There is also a mechanism for extending the built-in types to allow strongly-typed queries of custom user properties of Outlook items. I'll have more details about that in a later post.
+
+{% include_relative msdn-notice.md %}

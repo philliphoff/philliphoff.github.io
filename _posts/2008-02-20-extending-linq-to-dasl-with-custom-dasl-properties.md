@@ -2,6 +2,7 @@
 layout: posts
 title: "Extending LINQ to DASL with Custom DASL Properties"
 date: 2008-02-20
+tags: [msdn]
 ---
 <P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'"><FONT face="Times New Roman">In an earlier </FONT><A href="{% post_url 2008-02-18-query-your-outlook-inbox-with-linq-to-dasl %}"><FONT face="Times New Roman">post</FONT></A><FONT face="Times New Roman"> I discussed LINQ to DASL, part of the Office Interop API Extensions, which is one of the forthcoming VSTO Power Tools.&nbsp; LINQ to DASL allows you to write LINQ expressions against Outlook item collections.&nbsp; I also mentioned that many known DASL properties were not mapped to their Outlook item equivalents in this initial release.&nbsp; So how do you write&nbsp;LINQ expressions using DASL properties that weren't included?&nbsp; The answer is: by extending the base LINQ to DASL&nbsp;classes.&nbsp; Let's start with a non-LINQ example:<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></FONT></SPAN></P>
 <P style="MARGIN-LEFT: 0.5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'"><FONT face="Times New Roman">Outlook.<SPAN style="COLOR: #2b91af">Folder</SPAN> folder = (Outlook.<SPAN style="COLOR: #2b91af">Folder</SPAN>) <SPAN style="COLOR: blue">this</SPAN>.Application.Session.GetDefaultFolder(Outlook.<SPAN style="COLOR: #2b91af">OlDefaultFolders</SPAN>.olFolderInbox);<o:p></o:p></FONT></SPAN></P>
@@ -57,3 +58,5 @@ date: 2008-02-20
 <P style="MARGIN-LEFT: 0.5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'"><FONT face="Times New Roman">}<o:p></o:p></FONT></SPAN></P>
 <P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'"><FONT face="Times New Roman">Extensions to LINQ to DASL are not limited to the addition of new DASL properties.&nbsp; You can also extend the LINQ to DASL classes to allow strongly-typed query expressions&nbsp;using custom user properties.&nbsp; I'll discuss that topic in a future post.<o:p></o:p></FONT></SPAN></P>
 <P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face="Times New Roman" size=3>&nbsp;</FONT></o:p></P>
+
+{% include_relative msdn-notice.md %}
